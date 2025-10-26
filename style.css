@@ -1,0 +1,46 @@
+/* Navbar */
+.navbar a {
+  color: rgb(185, 185, 185);
+}
+.navbar a.active,
+.navbar .navbar-brand {
+  color: white !important;
+}
+
+/* Título central */
+.title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Carousel fade-in */
+.carousel-item p {
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cards texto justificado */
+.card-text {
+  text-align: justify;
+}
+
+/* Lista de opciones */
+.list-group {
+  text-decoration: underline;
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25) !important;
+}

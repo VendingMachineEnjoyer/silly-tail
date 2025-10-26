@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Responsive Bootstrap - Creepy Edition</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Responsive</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+        <li class="nav-item d-lg-none">
+          <a class="nav-link" data-bs-toggle="collapse" href="#mobileOptions" role="button" aria-expanded="false" aria-controls="mobileOptions">
+            Opciones
+          </a>
+        </li>
+      </ul>
+
+      <form class="d-none d-lg-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar...">
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Opciones Mobile -->
+<div class="container d-lg-none mb-4">
+  <div class="collapse" id="mobileOptions">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6">
+        <h5 class="mb-3 text-center">Opciones</h5>
+        <ul class="list-group">
+          <li class="list-group-item option-btn" data-section="1"><i class="bi bi-house-door"></i> Introducción</li>
+          <li class="list-group-item option-btn" data-section="2"><i class="bi bi-gear"></i> Experiencia</li>
+          <li class="list-group-item option-btn" data-section="3"><i class="bi bi-box-seam"></i> Gabriel</li>
+          <li class="list-group-item option-btn" data-section="4"><i class="bi bi-envelope"></i> Conclusión</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Título -->
+<h1 class="title">Mori seis minutos… y prefiero ir al infierno</h1>
+
+<!-- Carousel de texto creepy -->
+<div class="container mb-5">
+  <div id="carouselTexto" class="carousel slide text-center p-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <p class="fs-4 fw-semibold">Seis minutos fuera de mi cuerpo… y lo que vi me cambió para siempre.</p>
+      </div>
+      <div class="carousel-item">
+        <p class="fs-4 fw-semibold">El cielo brillaba, pero preferí caminar hacia el infierno.</p>
+      </div>
+      <div class="carousel-item">
+        <p class="fs-4 fw-semibold">Tiempo eterno, almas incansables y preguntas sin respuesta.</p>
+      </div>
+      <div class="carousel-item">
+        <p class="fs-4 fw-semibold">Gabriel inspeccionaba los anillos… y mi destino estaba decidido.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contenido principal -->
+<div class="container">
+  <div class="row g-4">
+
+    <!-- Sidebar Opciones (Desktop) -->
+    <div class="col-lg-3 d-none d-lg-block">
+      <h5 class="mb-3">Opciones</h5>
+      <ul class="list-group">
+        <li class="list-group-item option-btn" data-section="1"><i class="bi bi-house-door"></i> Introducción</li>
+        <li class="list-group-item option-btn" data-section="2"><i class="bi bi-gear"></i> Experiencia</li>
+        <li class="list-group-item option-btn" data-section="3"><i class="bi bi-box-seam"></i> Gabriel</li>
+        <li class="list-group-item option-btn" data-section="4"><i class="bi bi-envelope"></i> Conclusión</li>
+      </ul>
+    </div>
+
+    <!-- Cards con texto largo -->
+    <div class="col-12 col-lg-9">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <p class="card-text text-justify">Seis minutos fuera de mi cuerpo fueron suficientes para ver la inmensidad de lo que llaman Cielo. La luz me envolvía, pero algo en mi interior me decía que no quería quedarme allí.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <p class="card-text text-justify">Caminando entre ángeles y estructuras que desafiaban la lógica, comprendí que todo lo que creíamos eterno puede cambiar en un instante. Cada ser seguía su tarea, incansable, pero mi mirada buscaba escape.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
